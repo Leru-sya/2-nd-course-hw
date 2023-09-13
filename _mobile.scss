@@ -17,7 +17,6 @@
 
         &__title {
             max-width: 375px;
-            ;
             display: flex;
             font-size: 32px;
             flex-direction: column;
@@ -36,7 +35,6 @@
 
     .content {
         grid-template-columns: repeat(4, 1fr);
-
         &__item {
             grid-column: 1 / -1;
             width: 343px;
