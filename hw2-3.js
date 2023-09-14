@@ -19,7 +19,7 @@ if (c >= 0 && c <= 10) {
 let d = 101;
 let e = 5;
 
-if (d || e > 100) {
+if (d > 100 || e > 100) {
     console.log('Верно');
 } else {
     console.log('Неверно');
@@ -28,9 +28,9 @@ if (d || e > 100) {
 let a = '2';
 let b = '3';
 
-alert(a * b - true);
+alert(Number(a) + Number(b));
 //Задание 5
-let monthNumber = prompt('Введите номер месяца');
+let monthNumber = Number(prompt('Введите номер месяца'));
 
 switch (monthNumber) {
     case '1':
@@ -72,11 +72,3 @@ switch (monthNumber) {
     default: console.log('Такого месяца не существует');
         break;
 }
-//Задание 7 (Не понимаю как сделать проверку на число)
-let numeral = Number(prompt('Пожалуйста, введите любое число'));
-if (numeral%2 === 0) {
-    alert('Число четное');
-} else {
-    alert('Число нечетное');
-}
-//Задание 8
