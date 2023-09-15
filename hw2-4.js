@@ -1,19 +1,19 @@
 //Задание 1
 let i = 0;
-while(i<2){
+while (i < 2) {
     console.log('Привет');
     i++;
 }
 //Задание 2
 let a = 1;
-while(a<=5){
+while (a <= 5) {
     console.log(a);
     a++;
 }
 
 //Задание 3
 let b = 7;
-while (b<=22) {
+while (b <= 22) {
     console.log(b);
     b++;
 }
@@ -23,13 +23,14 @@ const obj = {
     Вася: 300,
     Петя: 400
 };
-for (let name in obj){
+for (let name in obj) {
     console.log(`${name} - зарплата ${obj[name]} долларов`);
 }
 //Задание 5
 let num = 0;
-for (let n = 1000; n > 50; n /= 2, num++){
-    console.log(n, num)}
+for (let n = 1000; n > 50; n /= 2, num++) {
+    console.log(n, num)
+}
 //Задание 6
 let friday = 1;
 
