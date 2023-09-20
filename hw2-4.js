@@ -27,8 +27,11 @@ for (let name in obj) {
     console.log(`${name} - зарплата ${obj[name]} долларов`);
 }
 //Задание 5
+let n = 1000;
 let num = 0;
-for (let n = 1000; n > 50; n /= 2, num++) {
+while (n >= 50) {
+    n /= 2;
+    num++;
     console.log(n, num)
 }
 //Задание 6
