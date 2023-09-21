@@ -1,13 +1,6 @@
 //Задание1
 function less(a, b) {
-    if (a > b) {
-        return a
-    } else if (a < b) {
-        return b;
-    }
-    else if (a = b) {
-        return a
-    }
+    return Math.min(a, b)
 }
 console.log(less(8, 2));
 
@@ -15,7 +8,7 @@ console.log(less(8, 2));
 function parity(c) {
     if (c % 2 == 0) {
         return ('Число чётное')
-    } else if (c % 2 !== 0) {
+    } else {
         return ('Число нечётное')
     }
 }
@@ -30,22 +23,19 @@ function number(d) {
 number(8)
 
 //Задание 4
-let age = prompt('Сколько Вам лет?')
-if (age < 0) {
-    function userAge() {
+function userAge() {
+    let age = prompt('Сколько Вам лет?');
+
+    if (age < 0) {
         console.log('Вы ввели неправильное значение');
-    }
-} else if (isNaN(age)) {
-    function userAge() {
+
+    } else if (isNaN(age)) {
         console.log('Вы ввели неправильное значение');
-    }
-}
-else if (age <= 12) {
-    function userAge() {
+
+    } else if (age <= 12) {
         console.log('Привет, друг!');
-    }
-} else {
-    function userAge() {
+        
+    } else {
         console.log('Добро пожаловать!');
     }
 }
