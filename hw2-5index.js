@@ -3,7 +3,7 @@
 function timeYear() {
     let month = prompt('Введите номер месяца');
 
-    if (month <= 0 || month > 12 || month === isNaN) {
+    if (month <= 0 || month > 12 || isNaN(month)) {
         alert(`Введите число от 1 до 12`)
     }
     else if (month == 1 || month == 2 || month == 12) {
