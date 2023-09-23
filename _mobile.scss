@@ -44,4 +44,30 @@
             margin-right: auto;
         }
     }
+
+    .gameTime {
+        padding-top: 51px;
+        padding-bottom: 85px;
+        flex-direction: column;
+
+        &__info {
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+        }
+
+        &__img {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
 }

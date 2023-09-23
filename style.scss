@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 a {
     text-decoration: none;
-  }
+}
 
-.center{
+.center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
@@ -15,19 +15,21 @@ a {
 body {
     font-family: "Montserrat", sans-serif;
     background: #000915;
-  }
+}
 
-.top{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 1000%),url(img/backhround.jpg), lightgray 50% / cover no-repeat;
+.top {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 1000%), url(img/backhround.jpg), lightgray 50% / cover no-repeat;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    &__header{
+
+    &__header {
         padding-top: 217px;
         padding-bottom: 494px;
     }
 }
-.top__title{
+
+.top__title {
     margin-bottom: 32px;
     color: #FFF;
     font-size: 64px;
@@ -37,7 +39,7 @@ body {
     width: 720px;
 }
 
-.top__text{
+.top__text {
     color: #FFF;
     font-size: 18px;
     font-style: normal;
@@ -47,11 +49,11 @@ body {
     margin-bottom: 44px;
 }
 
-.top__text_big{
+.top__text_big {
     font-weight: 700;
 }
 
-.top__button{
+.top__button {
     width: 234px;
     height: 48px;
     border-radius: 30px;
@@ -65,11 +67,12 @@ body {
     font-weight: 400;
     line-height: normal;
 }
+
 .top__button:hover {
     background: #EB443F;
 }
 
-.content{
+.content {
     margin-top: 128px;
     margin-bottom: 128px;
     display: grid;
@@ -77,7 +80,7 @@ body {
     grid-template-columns: repeat(12, 1fr);
 }
 
-.content__item{
+.content__item {
     position: relative;
     height: 300px;
     width: 379px;
@@ -85,30 +88,31 @@ body {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 32px; 
+    line-height: 32px;
     grid-column: span 4;
+    box-sizing: border-box
 }
 
-.content__item:hover{
+.content__item:hover {
     border: 3px solid #44D2FF;
 }
 
-.content__item_1{
+.content__item_1 {
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 1000%), url(img/game1.jpg), lightgray 50% / cover no-repeat;
 }
 
-.content__item_2{
+.content__item_2 {
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 1000%), url(img/game2.jpg), lightgray 50% / cover no-repeat;
 }
 
-.content__item_3{
+.content__item_3 {
     border-radius: 16px;
-background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 1000%), url(img/game3.jpg), lightgray 50% / cover no-repeat;
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 1000%), url(img/game3.jpg), lightgray 50% / cover no-repeat;
 }
 
-.content__text{
+.content__text {
     position: absolute;
     bottom: 32px;
     left: 32px;
@@ -117,6 +121,59 @@ background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 1000%), ur
     font-style: normal;
     font-weight: 600;
     line-height: 32px;
+}
+
+.gameTime {
+    display: flex;
+    gap: 131px;
+    padding-top: 233px;
+    padding-bottom: 233px;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+    }
+
+    &__title {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__text {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        background: #9C0332;
+        width: 234.063px;
+        height: 48.603px;
+        flex-shrink: 0;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &:hover {
+            background: #EB443F;
+        }
+    }
 }
 
 @import 'mobile';
