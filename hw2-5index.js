@@ -19,3 +19,18 @@ function timeYear() {
         alert('Осень')
     }
 }
+//Задание 11
+function guessThewords() {
+    let wordsArr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    wordsArr.sort(() => Math.random() - 0.5);
+    alert(wordsArr);
+    let firstQuestion = prompt('Чему равнялся первый элемент массива?');
+    let secondQuestion = prompt('Чему равнялся последний элемент массива?');
+    if (wordsArr[0].toLowerCase() === firstQuestion.toLowerCase() && wordsArr[wordsArr.length - 1].toLowerCase() === secondQuestion.toLowerCase()) {
+        alert('Поздравляем,ты угадал оба слова!');
+    } else if (wordsArr[0].toLowerCase() === firstQuestion.toLowerCase() || wordsArr[wordsArr.length - 1].toLowerCase() === secondQuestion.toLowerCase()) {
+        alert('Вы были близки к победе!');
+    } else {
+        alert('Увы,не правильно.');
+    }
+}
