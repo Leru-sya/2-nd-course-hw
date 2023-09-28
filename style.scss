@@ -176,4 +176,55 @@ body {
     }
 }
 
+.gameWords {
+    display: flex;
+    gap: 131px;
+    padding-top: 239px;
+    padding-bottom: 239px; 
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+    }
+    &__title {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__text {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        background: #9C0332;
+        width: 234.063px;
+        height: 48.603px;
+        flex-shrink: 0;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &:hover {
+            background: #EB443F;
+        }
+    }
+}
+
 @import 'mobile';

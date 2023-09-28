@@ -170,6 +170,54 @@ body {
   background: #EB443F;
 }
 
+.gameWords {
+  display: flex;
+  gap: 131px;
+  padding-top: 239px;
+  padding-bottom: 239px;
+}
+.gameWords__info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+}
+.gameWords__title {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.gameWords__text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.gameWords__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background: #9C0332;
+  width: 234.063px;
+  height: 48.603px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.gameWords__button:hover {
+  background: #EB443F;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -225,6 +273,26 @@ body {
     text-align: center;
   }
   .gameTime__img {
+    display: flex;
+    justify-content: center;
+  }
+  .gameWords {
+    padding-top: 51px;
+    padding-bottom: 85px;
+    flex-direction: column-reverse;
+  }
+  .gameWords__info {
+    align-items: center;
+  }
+  .gameWords__title {
+    font-size: 32px;
+  }
+  .gameWords__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .gameWords__img {
     display: flex;
     justify-content: center;
   }
